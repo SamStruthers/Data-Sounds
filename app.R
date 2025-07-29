@@ -21,7 +21,7 @@ library(shinyjs)
 # set wave player - Note this is for mac. 
 #setWavPlayer("afplay")
 
-data <- arrow::read_parquet("data/all_pwqn_data.parquet")
+data <- arrow::read_parquet("data/sharing/all_pwqn_data.parquet")
 sites <- unique(data$site)
 parameters <- unique(data$parameter)
 
